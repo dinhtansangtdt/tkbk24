@@ -115,7 +115,7 @@ export const useCourseStore = defineStore(
 
     // current week date list
     const currentWeekDayArray = computed(() => {
-      const weekIndex = currentWeekIndex.value + 1
+      const weekIndex = currentWeekIndex.value
       const someDate = new Date(startDate.value)
       someDate.setDate(someDate.getDate() + weekIndex * 7)
       // someDate.setDate(someDate.getDate() - 9)
