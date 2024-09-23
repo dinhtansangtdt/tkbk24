@@ -115,11 +115,11 @@ export const useCourseStore = defineStore(
 
     // current week date list
     const currentWeekDayArray = computed(() => {
-      const weekIndex = currentWeekIndex.value
+      const weekIndex = currentWeekIndex.value + 1
       const someDate = new Date(startDate.value)
       someDate.setDate(someDate.getDate() + weekIndex * 7)
       // someDate.setDate(someDate.getDate() - 9)
-      // someDate.setDate(someDate.getDate() - 1);
+      someDate.setDate(someDate.getDate() - 1);
       const dayArray: number[] = []
       dayArray.push(someDate.getDate())
       for (let i = 0; i < 6; i++) {
