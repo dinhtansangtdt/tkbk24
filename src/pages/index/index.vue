@@ -19,7 +19,7 @@ const showCourseAction = ref(false)
 
 // set the start date
 const someDate = new Date()
-someDate.setDate(someDate.getDate() + -1 * 7)
+someDate.setDate(someDate.getDate() + * 7)
 setStartDay(someDate)
 
 function handleCreateCourse() {
