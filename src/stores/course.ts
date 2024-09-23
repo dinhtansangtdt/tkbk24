@@ -122,7 +122,7 @@ export const useCourseStore = defineStore(
       someDate.setDate(someDate.getDate() - 1);
       const dayArray: number[] = []
       dayArray.push(someDate.getDate())
-      for (let i = 0; i < 7; i++) {
+      for (let i = 0; i < 6; i++) {
         someDate.setDate(someDate.getDate() + 1)
         dayArray.push(someDate.getDate())
       }
